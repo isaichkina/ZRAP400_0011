@@ -9,7 +9,7 @@ pipeline {
 		}
 	stage ('Run ATC checks') {
 			steps {
-				abapCi abapPackagename: 'ZRAP400_0011', runAtcCheks: true 
+				abapCi abapPackagename: 'ZRAP400_0011', runAtcChecks: true 
 			}
 		}
 	}
