@@ -4,7 +4,7 @@ pipeline {
 	stages {
 		stage ('Run Unit tests') {
 			steps {
-				abapCi abapPackagename: 'ZRAP400_0011',  runUnitTests: true, sapSystemLabel: 'TRL'
+				abapCi sapPackagename: 'ZRAP400_0011',  runUnitTests: true, sapSystemLabel: 'TRL'
 			}
 		}
 	
